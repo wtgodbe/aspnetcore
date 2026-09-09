@@ -92,7 +92,7 @@ internal sealed class ConsumerBuild : IDisposable
     /// <param name="projectRelativePath">Project to build, relative to the working folder.</param>
     public ProcessResult Run(string verb, string projectRelativePath)
     {
-        // The package version under test is constant (e.g. 11.0.0-dev). Make sure a previously
+        // The package version under test is constant (e.g. 12.0.0-dev). Make sure a previously
         // extracted copy in the shared repo cache (used as a fallback folder) can't shadow the
         // freshly built package; restore will then pull it from the local feed.
         EvictFromFallbackCache("Microsoft.AspNetCore.Components.WebView");
